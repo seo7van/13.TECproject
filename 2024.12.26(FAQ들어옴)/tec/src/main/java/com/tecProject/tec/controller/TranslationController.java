@@ -1,0 +1,39 @@
+package com.tecProject.tec.controller;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tecProject.tec.domain.Code;
+import com.tecProject.tec.service.TranslationService;
+
+@RestController
+@RequestMapping("/api/code") // 번역 API 주소
+public class TranslationController {
+	
+	private final TranslationService translationService;
+	
+    // 서비스 사용 준비
+    public TranslationController(TranslationService transltionService) {
+        this.translationService = transltionService;
+    }
+    
+    // 문장 번역 API
+    @GetMapping
+    public ResponseEntity<String> getTranslation(
+    		@RequestParam("origin") String originSentence,
+    		@RequestParam("language") String language
+	) {
+        String translatedSentence = translationService.translateSentence(originSentence, language);
+        return ResponseEntity.ok(translatedSentence);
+    }
+}

@@ -1,0 +1,84 @@
+/* 메인 전체 */
+.main-all {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Freesentation';
+}
+
+/* 콘텐츠 전체 */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* 다운로드 콘텐츠 전체 */
+.download-content {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px; /* 버튼 간격 설정 */
+}
+
+/* 다운로드 버튼 */
+.download-button {
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clip {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 10px;
+  flex: 1 1;
+  min-height: 200px;
+  position: relative;
+}
+
+.clip-body {
+  flex-grow: 1;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.clip-footer-line {
+  width: 100%; 
+  height: 2px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* 버튼 영역 */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.action-button,
+.compare-button {
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.compare-button {
+  background-color: #666;
+}
+

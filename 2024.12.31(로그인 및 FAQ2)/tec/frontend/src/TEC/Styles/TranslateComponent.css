@@ -1,0 +1,49 @@
+.content-all-page {
+    margin-top:10px;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.content-all { /* 콘텐츠 전체 div */
+    margin-top: 10px;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.content-top-buttonDiv { /* 콘텐츠 상단 버튼 */
+    margin-top: 10px;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.select-language { /* 개발언어 선택 */
+    margin-bottom: 10px;
+}
+
+.content-mid-translateDiv { /* 번역칸 div */
+    margin-top: 10px;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.content-mid-translateDiv-left { /* 번역 요청 div */
+    margin-top: 10px;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.content-mid-translateDiv-right { /* 번역 결과 div */
+    margin-top: 10px;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.content-buttom-translateBtn { /* 번역 버튼 div */
+    margin-top: 10px;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.translate-Btn { /* 번역 버튼 */
+    padding: 5px 10px;
+}
