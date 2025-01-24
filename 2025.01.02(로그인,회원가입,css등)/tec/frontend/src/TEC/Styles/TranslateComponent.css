@@ -1,0 +1,107 @@
+/* 콘텐츠 전체 */
+.content-all {
+  margin-top: 10px;
+  padding: 30px;
+  font-family: 'Freesentation';
+}
+
+/* 콘텐츠 상단 버튼 전체 */
+.content-top-buttonDiv {
+  display: flex;
+  padding: 10px;
+  justify-content: right;
+  margin: 0 20px;
+}
+
+/* 개발언어 JAVA등 전체, 다운로드,저장 버튼 각각 */
+.select-language, 
+.content-top-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Freesentation';
+  color: white;
+  background-color:#6841ea;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 6px 16px;
+}
+
+/* 버튼 호버 시 색상 변경 */
+.select-language:hover, 
+.content-top-btn:hover {
+  background-color: rgb(255, 196, 0);
+}
+
+
+
+/* 번역칸 전체 */
+.content-mid-translateDiv {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap; /* 창 폭이 줄어들면 줄 바꿈 */
+  justify-content: center;
+}
+
+/* 오리지널텍스트, 체인지텍스트 글자 */
+.content-title {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: left;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+/* 번역 결과, 번역 요청 큰 칸 */
+.content-mid-translateDiv-left,
+.content-mid-translateDiv-right {
+  border: 1px solid lightgray;
+  padding: 10px;
+  width: 850px;
+  background: white;
+  border-radius: 10px;
+  height: 300px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* 클릭 상태 */
+.content-mid-translateDiv-left.active,
+.content-mid-translateDiv-right.active {
+  border-color: #6841ea;
+}
+
+/* 창 폭 768px 이하이면 적용용 */
+@media screen and (max-width: 768px) {
+.content-mid-translateDiv {
+    flex-direction: column;
+}
+
+.content-mid-translateDiv-left,
+.content-mid-translateDiv-right {
+    width: 98%;
+}
+}
+
+/* 번역 버튼 */
+.content-buttom-translateBtn {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/* 번역 버튼 */
+.translate-Btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Freesentation';
+  color: white;
+  background-color:#6841ea;;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 6px 16px;
+}
+
+.translate-Btn:hover {
+  background-color: rgb(255, 196, 0);
+}
